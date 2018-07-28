@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>CV - Daniel Patterson</title>
+<link href="https://fonts.googleapis.com/css?family=Merryweather|Open+Sans" rel="stylesheet">
+<style type="text/css">
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Merryweather', serif;
+    margin: 0;
+    color: black;
+  }
+
+  h3 {
+    font-weight: normal;
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10.5pt;
+    color: #000;
+  }
+
+  ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  table {
+    width: 100%;
+    border-top: 1px solid grey;
+  }
+
+  .organisation {
+    font-weight: bold;
+  }
+
+  .organisation,
+  .location {
+    padding-right: 3px;
+  }
+
+  .title,
+  .reference {
+    font-style: italic;
+  }
+
+  tr td:first-child {
+    width: 20%;
+    vertical-align: top;
+  }
+
+  tr td {
+    padding-bottom: 10px;
+  }
+
+  .projects tr td {
+    padding-bottom: 5px;
+  }
+
+  ul.details {
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .website {
+    display: none;
+  }
+
+  .name,
+  .contact_details {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .name {
+    margin: 0 10% 0 20%;
+    font-size: 30pt;
+  }
+
+  .top_bar {
+    margin-bottom: 5px;
+  }
+
+  .address {
+    margin-top: 5px;
+  }
+</style>
+
+<body>
+  <div class="top_bar">
+    <h1 class="name">Daniel Patterson</h1>
+    <div class="contact_details">
+      <div class="email">dan24patt@gmail.com</div>
+      <div class="telephone">07906290623</div>
+      <ol class="address">
+        <li>18/8 Gladstone Terrace</li>
+        <li>Edinburgh, EH9 1LS</li>
+      </ol>
+      <div class="github website">GitHub:<a>https://github.com/dp28</a></div>
+      <div class="npm website">npm:<a>https://www.npmjs.com/~dp28</a></div>
+    </div>
+  </div>
+  <div class="employment">
+    <h2>Employment</h2>
+    <table>
+      <tr>
+        <td>
+          <div class="time">July 2016</div>
+          <div class="to">-</div>
+          <div class="time">Present</div>
+        </td>
+        <td>
+          <h3><span class="organisation">Sumdog Ltd,</span><span class="location">Edinburgh</span>-<span class="title">Web Architect</span></h3>
+          <ul class="details">
+            <li>
+              Responsible for the overall architecture and performance of Sumdog’s website and microservices
+            </li>
+            <li>
+              Involved in planning of any major change to server or database design
+            </li>
+            <li>Regularly code-reviewed other developers’ work</li>
+            <li>
+              Designed and built an Angular 2 tool to construct and modify online courses
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="time">September 2014</div>
+          <div class="to">-</div>
+          <div class="time">June 2016</div>
+        </td>
+        <td>
+          <h3><span class="organisation">Sumdog Ltd,</span><span class="location">Edinburgh</span>-<span class="title">Software Developer</span></h3>
+          <ul class="details">
+            <li>
+              Full-stack development role using Ruby on Rails, Scala, SQL, JavaScript, TypeScript and CoffeeScript
+            </li>
+            <li>
+              Significant experience developing JSON APIs and Angular (1 and 2) frontends
+            </li>
+            <li>Used Test-Driven Development and followed agile methodologies</li>
+            <li>
+              Built customisable reports and class controls in Angular for an online educational environment
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="time">Summer 2012</div>
+        </td>
+        <td>
+          <h3><span class="organisation">Metaswitch Networks,</span><span class="location">Edinburgh</span>-<span class="title">Software Development Intern</span></h3>
+          <ul class="details">
+            <li>
+              Designed and implemented a web-based GUI to back-end databases and proprietary data formats
+            </li>
+            <li>
+              Used Java Servlets to integrate interface with existing Java codebase
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="education">
+    <h2>Education</h2>
+    <table>
+      <tr>
+        <td>
+          <div class="time">September 2010</div>
+          <div class="to">-</div>
+          <div class="time">June 2014</div>
+        </td>
+        <td>
+          <h3><span class="organisation">University of St Andrews</span>-<span class="title">First Class BSc in Computer Science</span></h3>
+          <ul class="details">
+            <li>Built a Node.js program to generate 3D-printable gear trains</li>
+            <li>
+              Experience in human-computer interaction, artificial intelligence and agile methods
+            </li>
+            <li>
+              Coursework primarily in Java and JavaScript, with introductions to C, Python and Haskell
+            </li>
+            <li>
+              Awarded the John Honey Book Prize for best overall student in Third Year, medals for performance in Third and Fourth Years and the Netcraft Prize
+            </li>
+            <li>
+              Achieved the Dean’s List Award every year for academic excellence
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="projects">
+    <h2>Projects</h2>
+    <table>
+      <tr>
+        <td>layer</td>
+        <td>
+          A terminal background modifier written in CoffeeScript using PhantomJS and Node.js which I use daily for notifications
+          <div class="reference">(npm: layer-terminal)</div>
+        </td>
+      </tr>
+      <tr>
+        <td>weather-type</td>
+        <td>
+          Several JavaScript libraries to collectively parse and quantify weather descriptions, then convert them to SVG images
+          <div class="reference">(npm: weather-type, weather-type-icons)</div>
+        </td>
+      </tr>
+      <tr>
+        <td>nata</td>
+        <td>
+          A nested list app I built three times - in Rails, Rails with Angular, and Meteor - to learn more about each technology
+        </td>
+      </tr>
+      <tr>
+        <td>Morning sunshine</td>
+        <td>
+          An Android alarm app conditional on the weather that I am currently working on with a friend
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
