@@ -12,13 +12,27 @@
     color: black;
   }
 
+  page[size="A4"] {
+    background: white;
+    width: 14cm;
+    height: 19.8cm;
+    display: block;
+    margin: 0;
+    padding: 5mm 8mm
+  }
+
+  h2 {
+    font-size: 10pt;
+  }
+
   h3 {
+    font-size: 9pt;
     font-weight: normal;
   }
 
   body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 10.5pt;
+    font-size: 7.75pt;
     color: #000;
   }
 
@@ -31,6 +45,7 @@
   table {
     width: 100%;
     border-top: 1px solid grey;
+    position: relative;
   }
 
   .organisation {
@@ -48,7 +63,7 @@
   }
 
   tr td:first-child {
-    width: 20%;
+    width: 2.5cm;
     vertical-align: top;
   }
 
@@ -76,8 +91,8 @@
   }
 
   .name {
-    margin: 0 10% 0 20%;
-    font-size: 30pt;
+    margin: 0 1cm 0 2.5cm;
+    font-size: 20pt;
   }
 
   .top_bar {
@@ -87,10 +102,22 @@
   .address {
     margin-top: 5px;
   }
+
+  .content {
+    width: 100%;
+    position: relative;
+  }
+
+  .section {
+    width: 100%;
+    position: relative;
+  }
 </style>
 
 <body>
-  <div class="top_bar">
+<page size="A4">
+<div class="content">
+  <div class="top_bar section">
     <h1 class="name">Daniel Patterson</h1>
     <div class="contact_details">
       <div class="email">dan24patt@gmail.com</div>
@@ -103,7 +130,7 @@
       <div class="npm website">npm:<a>https://www.npmjs.com/~dp28</a></div>
     </div>
   </div>
-  <div class="employment">
+  <div class="employment section">
     <h2>Employment</h2>
     <table>
       <tr>
@@ -205,7 +232,7 @@
       </tr>
     </table>
   </div>
-  <div class="education">
+  <div class="education section">
     <h2>Education</h2>
     <table>
       <tr>
@@ -245,7 +272,7 @@
       </tr>
     </table>
   </div>
-  <div class="projects">
+  <div class="projects section">
     <h2>Projects</h2>
     <table>
       <tr>
@@ -287,6 +314,8 @@
       </tr>
     </table>
   </div>
+<div/>
+</page>
 </body>
 
 </html>
