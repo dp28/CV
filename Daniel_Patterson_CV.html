@@ -58,7 +58,7 @@
   }
 
   tr td:first-child {
-    width: 15%;
+    width: 18%;
     vertical-align: top;
   }
 
@@ -87,7 +87,7 @@
   }
 
   .name {
-    margin-left: 15%;
+    margin-left: 18%;
     font-size: 30pt;
   }
 
@@ -123,6 +123,51 @@
   <div class="employment">
     <h2>Employment</h2>
     <table>
+
+      <tr>
+        <td>
+          <h3>
+            <div class="organisation">InsightSquared</div>
+            <div class="location">Boston, USA</div>
+          </h3>
+        </td>
+        <td>
+          <h3>
+            <span class="title">Software Engineer</span>
+            |
+            <span class="duration">
+              <div class="time">Mar 2019</div>
+              <div class="to">-</div>
+              <div class="time">Current</div>
+            </span>
+          </h3>
+
+          <ul class="details">
+            <li>
+              Helped build greenfield
+              <span class="language">Python 3.6+</span>
+              RESTful APIs using
+              <span class="framework">Serverless</span> and
+              <span class="framework">AWS Lambda</span>
+            </li>
+            <li>
+              Integrated legacy
+              <span class="framework">Django</span> cookie-based authentication
+              and OAuth token-based authentication with SAML through AWS Cognito
+            </li>
+            <li>
+              Built and monitored a replication system to continuously move data
+              from a transactional
+              <span class="language">Postgres</span> database to an analytics
+              <span class="language">AWS Redshift</span> database
+            </li>
+            <li>
+              Interviewed candidates for developer positions, from Interns to Senior Software Engineers
+            </li>
+          </ul>
+        </td>
+      </tr>
+
       <tr>
         <td>
           <h3>
@@ -165,20 +210,17 @@
             </li>
             <li>
               Responsible for organising demos from all of Engineering to the
-              rest of the company
+              entire company
             </li>
             <li>
               Led Engineering workshops on new
               <span class="language">JavaScript</span>
               features
             </li>
-            <li>
-              Automated set up of test servers, saving developers time for every
-              manual test
-            </li>
           </ul>
         </td>
       </tr>
+
       <tr>
         <td>
           <h3>
@@ -205,11 +247,8 @@
               Involved in planning of any major change to server or database
               design
             </li>
-            <li>Regularly code-reviewed other developers’ work</li>
             <li>
-              Designed and built an
-              <span class="framework">Angular 2</span>
-              tool to construct and modify online courses
+              Migrated a crucial static data structure to a versioned, updatable model
             </li>
           </ul>
         </td>
@@ -239,17 +278,9 @@
               <span class="language">CoffeeScript</span>
             </li>
             <li>
-              Significant experience developing JSON APIs and
-              <span class="framework">Angular (1 and 2)</span>
-              frontends
-            </li>
-            <li>
-              Used Test-Driven Development and followed agile methodologies
-            </li>
-            <li>
-              Built customisable reports and class controls in
-              <span class="framework">Angular</span> for an online educational
-              environment
+              Used Test-Driven Development and followed agile methodologies to
+              build RESTful APIs and
+              <span class="framework">Angular</span> front ends
             </li>
           </ul>
         </td>
@@ -278,9 +309,6 @@
           </h3>
           <ul class="details">
             <li>
-              Built a Node.js program to generate 3D-printable gear trains
-            </li>
-            <li>
               Experience in human-computer interaction, artificial intelligence
               and agile methods
             </li>
@@ -294,11 +322,8 @@
             </li>
             <li>
               Awarded the John Honey Book Prize for best overall student in
-              Third Year, medals for performance in Third and Fourth Years and
-              the Netcraft Prize
-            </li>
-            <li>
-              Achieved the Dean’s List Award every year for academic excellence
+              Third Year, medals for performance in Third and Fourth Years, and
+              the Dean’s List Award in all four years
             </li>
           </ul>
         </td>
@@ -334,7 +359,7 @@
       <tr>
         <td>Score Card</td>
         <td>
-          An event-source progressive web app to enable recording scores in a
+          An event-sourced progressive web app to enable recording scores in a
           variety of games using both a
           <span class="framework">React</span>-powered frontend and an
           <span class="framework">Amazon Alexa</span> Skill.
