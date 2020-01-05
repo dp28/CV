@@ -33,6 +33,16 @@
     border-top: 1px solid grey;
   }
 
+  .time,
+  .to {
+    display: inline;
+  }
+
+  .email {
+    margin-bottom: 10px;
+  }
+
+  .title,
   .organisation {
     font-weight: bold;
   }
@@ -42,13 +52,13 @@
     padding-right: 3px;
   }
 
-  .title,
+  .duration,
   .reference {
     font-style: italic;
   }
 
   tr td:first-child {
-    width: 20%;
+    width: 15%;
     vertical-align: top;
   }
 
@@ -65,18 +75,19 @@
     margin: 0;
   }
 
-  .website {
-    display: none;
-  }
-
   .name,
   .contact_details {
     display: inline-block;
     vertical-align: top;
   }
 
+  .contact_details {
+    position: absolute;
+    right: 10px;
+  }
+
   .name {
-    margin: 0 10% 0 20%;
+    margin-left: 15%;
     font-size: 30pt;
   }
 
@@ -87,6 +98,11 @@
   .address {
     margin-top: 5px;
   }
+
+  .language,
+  .framework {
+    font-weight: bold;
+  }
 </style>
 
 <body>
@@ -94,13 +110,14 @@
     <h1 class="name">Daniel Patterson</h1>
     <div class="contact_details">
       <div class="email">dan24patt@gmail.com</div>
-      <div class="telephone">+447906290623</div>
-      <ol class="address">
-        <li>10 3F2 Bothwell Street</li>
-        <li>Edinburgh, EH7 5PS, UK</li>
-      </ol>
-      <div class="github website">GitHub:<a>https://github.com/dp28</a></div>
-      <div class="npm website">npm:<a>https://www.npmjs.com/~dp28</a></div>
+      <div class="github website">
+        GitHub:
+        <a href="https://github.com/dp28">github.com/dp28</a>
+      </div>
+      <div class="npm website">
+        npm:
+        <a href="https://www.npmjs.com/~dp28">npmjs.com/~dp28</a>
+      </div>
     </div>
   </div>
   <div class="employment">
@@ -108,35 +125,52 @@
     <table>
       <tr>
         <td>
-          <div class="time">March 2017</div>
-          <div class="to">-</div>
-          <div class="time">Present</div>
+          <h3>
+            <div class="organisation">Administrate</div>
+            <div class="location">Edinburgh, UK</div>
+          </h3>
         </td>
         <td>
           <h3>
-            <span class="organisation">Administrate,</span>
-            <span class="location">Edinburgh</span>
-            -
             <span class="title">Software Developer</span>
+            |
+            <span class="duration">
+              <div class="time">Mar 2017</div>
+              <div class="to">-</div>
+              <div class="time">Feb 2019</div>
+              (including 6 months pre-planned break to travel)
+            </span>
           </h3>
+
           <ul class="details">
             <li>
-              Contributed to GraphQL APIs written in Python and Java 8
+              Contributed to
+              <span class="framework">GraphQL</span>
+              APIs written in
+              <span class="language">Python</span> and
+              <span class="language">Java 8</span>
             </li>
             <li>
-              Worked on a greenfield Dockerised Node.js microservice alongside
-              several existing Python web servers
+              Worked on a greenfield Dockerised
+              <span class="language">Node.js</span>
+              microservice alongside
+              several existing
+              <span class="language">Python</span>
+              web servers
             </li>
             <li>
-              Used AWS CloudFormation and CircleCI to set up continuous
-              deployment of several microservices
+              Used <span class="framework">AWS CloudFormation</span>
+              and CircleCI to set up continuous deployment of several
+              microservices
             </li>
             <li>
               Responsible for organising demos from all of Engineering to the
               rest of the company
             </li>
             <li>
-              Led Engineering workshops on new JavaScript features
+              Led Engineering workshops on new
+              <span class="language">JavaScript</span>
+              features
             </li>
             <li>
               Automated set up of test servers, saving developers time for every
@@ -147,16 +181,20 @@
       </tr>
       <tr>
         <td>
-          <div class="time">July 2016</div>
-          <div class="to">-</div>
-          <div class="time">March 2017</div>
+          <h3>
+            <div class="organisation">Sumdog Ltd</div>
+            <div class="location">Edinburgh, UK</div>
+          </h3>
         </td>
         <td>
           <h3>
-            <span class="organisation">Sumdog Ltd,</span>
-            <span class="location">Edinburgh</span>
-            -
             <span class="title">Web Architect</span>
+            |
+            <span class="duration">
+              <div class="time">July 2016</div>
+              <div class="to">-</div>
+              <div class="time">Mar 2017</div>
+            </span>
           </h3>
           <ul class="details">
             <li>
@@ -169,40 +207,49 @@
             </li>
             <li>Regularly code-reviewed other developers’ work</li>
             <li>
-              Designed and built an Angular 2 tool to construct and modify
-              online courses
+              Designed and built an
+              <span class="framework">Angular 2</span>
+              tool to construct and modify online courses
             </li>
           </ul>
         </td>
       </tr>
       <tr>
         <td>
-          <div class="time">September 2014</div>
-          <div class="to">-</div>
-          <div class="time">June 2016</div>
         </td>
         <td>
+
           <h3>
-            <span class="organisation">Sumdog Ltd,</span>
-            <span class="location">Edinburgh</span>
-            -
             <span class="title">Software Developer</span>
+            |
+            <span class="duration">
+              <div class="time">Sept 2014</div>
+              <div class="to">-</div>
+              <div class="time">June 2016</div>
+            </span>
           </h3>
           <ul class="details">
             <li>
-              Full-stack development role using Ruby on Rails, Scala, SQL,
-              JavaScript, TypeScript and CoffeeScript
+              Full-stack development role using
+              <span class="language">Ruby on Rails</span>,
+              <span class="language">Scala</span>,
+              <span class="language">SQL</span>,
+              <span class="language">JavaScript</span>,
+              <span class="language">TypeScript</span> and
+              <span class="language">CoffeeScript</span>
             </li>
             <li>
-              Significant experience developing JSON APIs and Angular (1 and 2)
+              Significant experience developing JSON APIs and
+              <span class="framework">Angular (1 and 2)</span>
               frontends
             </li>
             <li>
               Used Test-Driven Development and followed agile methodologies
             </li>
             <li>
-              Built customisable reports and class controls in Angular for an
-              online educational environment
+              Built customisable reports and class controls in
+              <span class="framework">Angular</span> for an online educational
+              environment
             </li>
           </ul>
         </td>
@@ -214,15 +261,20 @@
     <table>
       <tr>
         <td>
-          <div class="time">September 2010</div>
-          <div class="to">-</div>
-          <div class="time">June 2014</div>
+          <h3>
+            <div class="organisation">University of <br/>St Andrews</div>
+            <div class="location">UK</div>
+          </h3>
         </td>
         <td>
           <h3>
-            <span class="organisation">University of St Andrews</span>
-            -
             <span class="title">First Class BSc in Computer Science</span>
+            |
+            <span class="duration">
+              <div class="time">September 2010</div>
+              <div class="to">-</div>
+              <div class="time">June 2014</div>
+            </span>
           </h3>
           <ul class="details">
             <li>
@@ -233,8 +285,12 @@
               and agile methods
             </li>
             <li>
-              Coursework primarily in Java and JavaScript, with introductions to
-              C, Python and Haskell
+              Coursework primarily in
+              <span class="language">Java</span> and
+              <span class="language">JavaScript</span>, with introductions to
+              <span class="language">C</span>,
+              <span class="language">Python</span> and
+              <span class="language">Haskell</span>
             </li>
             <li>
               Awarded the John Honey Book Prize for best overall student in
@@ -253,29 +309,35 @@
     <h2>Projects</h2>
     <table>
       <tr>
+        <td>Upscale</td>
+        <td>
+          A Chrome extension and React-based website to simplify cooking using
+          online recipes.
+          <div class="reference">
+            (<a href="https://recipes.djpdev.com/">recipes.djpdev.com</a>)
+          </div>
+        </td>
+      </tr>
+      <tr>
         <td>R & D travel</td>
         <td>
-          A blog built using React, GraphQL and Ruby on Rails covering five
-          months I spent traveling in South East Asia and South America
+          A blog built using
+          <span class="framework">React</span>,
+          <span class="framework">GraphQL</span> and
+          <span class="language">Ruby on Rails</span> covering five
+          months I spent traveling in South East Asia and South America.
           <div class="reference">
             (<a href="http://www.rndtravels.com/">www.rndtravels.com</a>)
           </div>
         </td>
       </tr>
       <tr>
-        <td>weather-type</td>
-        <td>
-          Several JavaScript libraries to collectively parse and quantify
-          weather descriptions, then convert them to SVG images
-          <div class="reference">(npm: weather-type, weather-type-icons)</div>
-        </td>
-      </tr>
-      <tr>
         <td>Score Card</td>
         <td>
           An event-source progressive web app to enable recording scores in a
-          variety of games using both a React-powered frontend and an Amazon
-          Alexa Skill.
+          variety of games using both a
+          <span class="framework">React</span>-powered frontend and an
+          <span class="framework">Amazon Alexa</span> Skill.
           <div class="reference">
             (GitHub:
             <a href="https://github.com/dp28/score-card">
@@ -283,7 +345,7 @@
             </a>
             , App:
             <a href="https://card-scores.herokuapp.com">
-              https://card-scores.herokuapp.com
+              card-scores.herokuapp.com
             </a>
             )
           </div>
